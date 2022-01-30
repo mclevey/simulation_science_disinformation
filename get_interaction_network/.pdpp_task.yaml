@@ -1,0 +1,13 @@
+!!python/object:pdpp.tasks.standard_task.StandardTask
+dep_files:
+  simulate: !!python/object:pdpp.templates.dep_dataclass.dep_dataclass
+    dir_list: []
+    file_list:
+    - model_runs.csv
+    task_name: simulate
+    task_out: output
+enabled: true
+language: Python
+src_files:
+- get_interaction_network.py
+target_dir: get_interaction_network
